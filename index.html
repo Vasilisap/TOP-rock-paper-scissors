@@ -3,12 +3,52 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
 		<script defer src="app.js"></script>
 		<title>Rock paper scissors</title>
 	</head>
 	<body>
-		<h1>Rock paper scissors</h1>
+		<main class="game">
+			<h1>Rock paper scissors</h1>
 
-		<div class="game"></div>
+			<section class="common-padding">
+				<div class="container">
+					<div class="flex-container">
+						<div class="rock">
+							<img src="assets/rock.jpg" alt="rock" />
+							<h2>Rock</h2>
+							<button data-id="rock" class="play-round">Select Rock</button>
+						</div>
+						<div class="paper">
+							<img src="assets/paper.jpg" alt="paper" />
+							<h2>Paper</h2>
+							<button data-id="paper" class="play-round">Select Paper</button>
+						</div>
+						<div class="scissors">
+							<img src="assets/scissors.png" alt="scissors" />
+							<h2>Scissors</h2>
+							<button data-id="scissors" class="play-round">
+								Select Scissors
+							</button>
+						</div>
+					</div>
+					<div>
+						<p class="round-result"></p>
+						<p class="round-title"></p>
+						<div class="flex-scores">
+							<div class="human">
+								<p>You</p>
+								<p id="human-score" class="score">0</p>
+							</div>
+							<div class="computer">
+								<p>Computer</p>
+								<p id="computer-score" class="score">0</p>
+							</div>
+						</div>
+						<button class="btn-reset">Reset game</button>
+					</div>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>
